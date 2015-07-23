@@ -820,7 +820,7 @@ namespace RestSharp
 #if PocketPC
                             try {
                                 codePoint = UInt32.Parse(new string(json, index, 4), NumberStyles.HexNumber);
-                            } catch (Exception ex) {
+                            } catch (Exception) {
                                 return "";
                             }
 #else
